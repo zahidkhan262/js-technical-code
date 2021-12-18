@@ -78,6 +78,7 @@ obj2.__proto__ = obj;
 
 // setter
 
+
 const person = {
     firstName: "John",
     lastName: "Doe",
