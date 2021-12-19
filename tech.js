@@ -120,8 +120,19 @@ const d = {
     "vote_count": 23021
 }
 
-d.production_companies.forEach(function (ele) {
-    document.write(ele.id + "<br>" + ele.logo_path + "<br>" + ele.naelee + "<br>" + ele.origin_country + "<br>")
-})
+// d.production_companies.forEach(function (ele) {
+//     document.write(ele.id + "<br>" + ele.logo_path + "<br>" + ele.naelee + "<br>" + ele.origin_country + "<br>")
+// })
 
+
+// for (i in d) {
+//     let ele = d[i];
+//     document.write(ele);
+//     document.write("<br>");
+
+d.genres.map(element => {
+    document.write(element.id + " " + element.name);
+});
+
+// }
 
