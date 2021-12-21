@@ -25,3 +25,7 @@ allData.forEach((ele) => {
     `
 })
 bind.innerHTML = card;
+
+
+// let showData = document.querySelectorAll('.showData');
+
