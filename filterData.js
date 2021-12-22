@@ -27,19 +27,14 @@ allData.forEach((ele) => {
 bind.innerHTML = card;
 
 
-// let showData = document.querySelectorAll('.showData');
-let selectData = document.getElementById('select');
+let showData = document.querySelectorAll('.showData');
+// let selectData = document.getElementById('select');
 let getValue = "";
-
-selectData.addEventListener('click', function () {
-    getValue = this.value;
-    console.log(getValue);
-
-    let filterData = allData.filter((item) => {
-        return item.name == getValue;
-    })
-    filterData.forEach((ele) => {
-        card += `
+let filterData = allData.filter((item) => {
+    return item.name == getValue;
+})
+filterData.forEach((ele) => {
+    card += `
         <div class="card">
                 <img src="${ele.img_path}">
                 <div class="card-body">
@@ -49,8 +44,8 @@ selectData.addEventListener('click', function () {
                 </div>
             </div>
         `
-    })
-    bind.innerHTML = card;
 })
+bind.innerHTML = card;
+
 
 console.log(getValue)
