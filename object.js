@@ -1,17 +1,17 @@
-let obj = {
-    name: 'zahid',
-    age: 22,
-    city: 'Noida',
-    getDetails: function () {
-        console.log(this.name + "age is" + this.age + "from" + this.city);
-    }
-}
+// let obj = {
+//     name: 'zahid',
+//     age: 22,
+//     city: 'Noida',
+//     getDetails: function () {
+//         console.log(this.name + "age is" + this.age + "from" + this.city);
+//     }
+// }
 
-let obj2 = {
-    name: 'khan'
-}
+// let obj2 = {
+//     name: 'khan'
+// }
 
-obj2.__proto__ = obj;
+// obj2.__proto__ = obj;
 
 
 
@@ -79,16 +79,34 @@ obj2.__proto__ = obj;
 // setter
 
 
+// const person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     language: "",
+//     set lang(abc) {
+//         this.language = abc;
+//     }
+// };
+
+// // Set an object property using a setter:
+// let x = person.lang = "english";
+
+// btn.innerHTML = x;
+
+
+
 const person = {
     firstName: "John",
     lastName: "Doe",
-    language: "",
-    set lang(abc) {
-        this.language = abc;
+    salary: 1000,
+    get lang() {
+        return `this is montholy salary ${this.salary / 12}`;
     }
 };
 
-// Set an object property using a setter:
-let x = person.lang = "english";
+for (i in person) {
+    document.write(`${person[i]}`, '<br>')
+}
 
-btn.innerHTML = x;
+
+// btn.innerHTML = (person.lang);
