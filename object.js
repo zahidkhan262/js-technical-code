@@ -1,3 +1,5 @@
+console.clear();
+
 // literal object
 // let obj = {
 //     name: 'zahid',
@@ -41,17 +43,18 @@
 //     name: "John",
 //     age: 30,
 //     city: "New York"
+
 // };
-const person = {
-    fname: "John",
-    lname:"doe",
-    age: 30,
-    city: "New York",
-     fullDetail(){
-         return `${this.fname} ${this.lname} age is ${this.age} `
-    }
-};
-console.log(person.fullDetail())
+// const person = {
+//     fname: "John",
+//     lname:"doe",
+//     age: 30,
+//     city: "New York",
+//      fullDetail(){
+//          return `${this.fname} ${this.lname} age is ${this.age} `
+//     }
+// };
+// console.log(person.fullDetail())
 
 // let myArray = Object.values(person)
 // console.log(myArray);
@@ -137,3 +140,27 @@ console.log(person.fullDetail())
 
 
 // btn.innerHTML = (person.lang);
+
+
+
+// create object with constructor method
+
+function employee(ename,age,city){
+    this.name=ename;
+    this.age=age;
+    this.city=city;
+    this.getDetail= function(){
+        return this.name + "_" +  this.city
+    }
+}
+
+let obj1=new employee("zahid", 22, "Noida");
+console.log(obj1.getDetail())
+
+obj1.nationality="Indian"
+
+let obj2=new employee("yusuf", 25, "Noida")
+
+obj2.nationality="canadian"
+
+// console.log(obj1,obj2)
