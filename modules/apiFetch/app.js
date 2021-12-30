@@ -2,7 +2,7 @@ let showData = document.getElementById('bind');
 
 import moduleData from './moul.js';
 
-import {getDate} from './moul.js'
+import data, { getDate } from './moul.js'
 
 fetch('data.json').then((res) => {
     res.json().then((result) => {
@@ -60,7 +60,41 @@ fetch('data.json').then((res) => {
             tble += `</table>`
 
             showData.innerHTML = tble;
+
+
         }
+
+        let inpu1 = document.getElementById("id1");
+        let inpu2 = document.getElementById("name1");
+        let inpu3 = document.getElementById("title1");
+
+        document.getElementById('done').onclick = function () {
+
+
+            let obj = { name: inpu2.value, id: inpu1.value, title: inpu3.value }
+
+
+            result.push(obj)
+
+            result.map((item) => {
+                tble += `
+                    <tbody>
+                    <tr>
+                        <td>${item.id}</td>
+                        <td>${item.name}</td>
+                        <td>${item.title}</td>
+                    </tr>
+                </tbody>
+`
+            })
+            tble += `</table>`
+
+            showData.innerHTML = tble;
+
+
+            console.log(result)
+        }
+
 
     })
 })
@@ -74,4 +108,4 @@ moduleData.map((abc) => {
 
 
 
-console.log("today date is :" , getDate)
+console.log("today date is :", getDate)
