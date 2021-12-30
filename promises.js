@@ -8,13 +8,13 @@ const fileUpload = new Promise((resolve, reject) => {
     if (isUpload) {
         resolve('file upload successfully....')
     } else {
-        reject('failed to file upload')
+        reject('failed to  upload')
     }
 
 
 })
 
-const uploadFile = async () => {
+const uploadFile = async function () {
     fileUpload.then(res => {
         console.log(res);
     })
