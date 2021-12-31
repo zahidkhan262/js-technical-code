@@ -19,7 +19,7 @@ fetch('data.json').then((res) => {
         </tr>
     </thead>
     `
-        result.map((item) => {
+        result.data.map((item) => {
             tble += `
                         <tbody>
                         <tr>
