@@ -39,7 +39,7 @@ fetch('data.json').then((res) => {
         document.getElementById('a1').onkeyup = function () {
             inpuValue = this.value;
             console.log(inpuValue)
-            let filterData = result.filter((ele) => {
+            let filterData = result.data.filter((ele) => {
                 if (ele.name === inpuValue) {
                     return ele;
                 }
@@ -74,9 +74,9 @@ fetch('data.json').then((res) => {
             let obj = { name: inpu2.value, id: inpu1.value, title: inpu3.value }
 
 
-            result.push(obj)
+            result.data.push(obj)
 
-            result.map((item) => {
+            result.data.map((item) => {
                 tble += `
                     <tbody>
                     <tr>
