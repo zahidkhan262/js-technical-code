@@ -9,15 +9,16 @@ fetch('data.json').then((res) => {
         console.log(result)
 
 
-        let tble = `
-    <table border="1" width="100%">
-    <thead>
-        <tr>
-            <td>ID</td>
-            <td>Name</td>
-            <td>Title</td>
-        </tr>
-    </thead>
+        let tble = 
+    `
+            <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>Title</td>
+                </tr>
+            </thead>
     `
         result.data.map((item) => {
             tble += `
@@ -28,7 +29,7 @@ fetch('data.json').then((res) => {
                             <td>${item.title}</td>
                         </tr>
                     </tbody>
-    `
+                    `
         })
         tble += `</table>`
 
@@ -63,6 +64,7 @@ fetch('data.json').then((res) => {
 
 
         }
+
 
         let inpu1 = document.getElementById("id1");
         let inpu2 = document.getElementById("name1");
