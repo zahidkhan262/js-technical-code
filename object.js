@@ -145,22 +145,28 @@ console.clear();
 
 // create object with constructor method
 
-function employee(ename,age,city){
-    this.name=ename;
-    this.age=age;
-    this.city=city;
-    this.getDetail= function(){
-        return this.name + "_" +  this.city
-    }
-}
+// function employee(ename,age,city){
+//     this.name=ename;
+//     this.age=age;
+//     this.city=city;
+//     this.getDetail= function(){
+//         return this.name + "_" +  this.city
+//     }
+// }
 
-let obj1=new employee("zahid", 22, "Noida");
-console.log(obj1.getDetail())
+// let obj1=new employee("zahid", 22, "Noida");
+// console.log(obj1.getDetail())
 
-obj1.nationality="Indian"
+// obj1.nationality="Indian"
 
-let obj2=new employee("yusuf", 25, "Noida")
+// let obj2=new employee("yusuf", 25, "Noida")
 
-obj2.nationality="canadian"
+// obj2.nationality="canadian"
 
 // console.log(obj1,obj2)
+let obj={name:"zahid",id:122,salary:13444}
+ let arr=Object.values(obj)
+   arr.forEach((items,index)=>{
+
+       console.log(items,index)
+   })
