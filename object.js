@@ -165,8 +165,20 @@ console.clear();
 
 // console.log(obj1,obj2)
 let obj={name:"zahid",id:122,salary:13444}
- let arr=Object.values(obj)
-   arr.forEach((items,index)=>{
+ let arr1=Object.values(obj)
+   arr1.forEach((items,index)=>{
 
        console.log(items,index)
-   })
+   });
+
+
+   let arr = new Array();
+
+   arr[0] = "zahid";
+   arr[1] = "yousuf";
+   arr[2] = "yousuf";
+   arr[3] = "yousuf";
+   arr[4] = "yousuf";
+   arr[5] = "yousuf";
+   arr[6] = "yousuf";
+   console.log(arr)
