@@ -21,7 +21,11 @@
 //         .catch((error) => {
 //             console.log(error)
 //         })
-
+try {
+        let response = await api;
+        console.log(response)
+    } catch (error) {
+        console.log(error)
 
 //     try {
 //         const res = await fileUpload;
@@ -51,11 +55,7 @@ const promiseFile = async () => {
         console.log(error)
     })
 
-    try {
-        let response = await api;
-        console.log(response)
-    } catch (error) {
-        console.log(error)
+    
     }
 }
 promiseFile();
