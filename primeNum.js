@@ -18,7 +18,7 @@
 // }
 
 let userInput = ""
-var showData = document.getElementById('showData')
+let showData = document.getElementById('showData')
 document.getElementById("search").onkeyup = function () {
     userInput = this.value;
     
