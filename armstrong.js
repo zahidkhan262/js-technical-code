@@ -18,6 +18,5 @@ document.getElementById("check").onclick = function () {
         showData.innerHTML = `${userInput} is Armstrong`
     } else {
         showData.innerHTML = `${userInput} is not Armstrong`
-
     }
 }
