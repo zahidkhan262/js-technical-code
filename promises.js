@@ -99,6 +99,33 @@ console.log(b)
 
 // git status
 
+
+// for second time push github code
+
 // git add .
 // git commit -m "changes msg"
-// git push -u origin main master gh-pages 
+// git push -u origin main master gh-pages
+
+// react js deploy projects on github
+
+// first install gh-pages
+// npm install gh-pages --save-dev
+
+// goto package.json paste it in script
+// "predeploy": "npm run build",
+// "deploy": "gh-pages -d build"
+
+// git init
+// git add .
+
+// git commit -m "learning promsise"
+
+// git branch -M master
+
+// git remote add origin "https://github.io/zahidkhan262/app-react.git"
+
+// git push origin master
+
+
+// npm run deploy
+
