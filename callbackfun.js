@@ -29,15 +29,27 @@
 
 
 
-let x = 20;
+// let x = 20;
 
-console.log(x)
+// console.log(x)
+
+// setTimeout(() => {
+
+//     let y = 30;
+//     console.log(y)
+// }, 5000);
+
+// let z = 40;
+// console.log(z)
 
 setTimeout(() => {
+    console.log("this is settime out")
+}, 2000)
 
-    let y = 30;
-    console.log(y)
-}, 5000);
-
-let z = 40;
-console.log(z)
+function xyz(abc) {
+    console.log("this is first");
+    abc()
+}
+xyz(function abc() {
+    console.log("this is second funtion")
+})
