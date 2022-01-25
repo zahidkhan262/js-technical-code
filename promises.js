@@ -120,7 +120,7 @@ console.log(b)
 
 // git commit -m "learning promsise"
 
-// git branch -M master
+// git branch -M m  
 
 // git remote add origin "https://github.io/zahidkhan262/app-react.git"
 
