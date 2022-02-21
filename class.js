@@ -16,4 +16,5 @@ class car {
 
 const classInstance = new car(4, 10, 1)
 console.log(classInstance.carStats());
+console.log(classInstance.carDetails());
 
