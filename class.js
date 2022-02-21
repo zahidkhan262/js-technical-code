@@ -9,6 +9,9 @@ class car {
     carStats() {
         return ` This car has ${this.door} doors, mirrors ${this.mirror} and have a engine ${this.engine}`
     }
+      carDetails() {
+        return ` This car has ${this.door} doors, mirrors ${this.mirror} and have a engine ${this.engine}`
+    }
 }
 
 const classInstance = new car(4, 10, 1)
