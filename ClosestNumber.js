@@ -6,4 +6,8 @@ let findClosest = arr1.reduce((prevElement, currEle) => {
     return (Math.abs(currEle - target) < Math.abs(prevElement - target) ? currEle : prevElement)
 })
 
+let sortArr=arr1.sort((a,b)=> return a-b;
+          
+          console.log(sortArr)
+
 console.log(findClosest);
