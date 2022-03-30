@@ -226,6 +226,10 @@ const user1 = {
   mobile: 8801967402131,
   name: "Talha"
 }
+user1.second = "khan"
+
+console.log("ab", ab);
+console.log(user1);
 const newObj = {
   ...user1,
   location: 'sylhet'
