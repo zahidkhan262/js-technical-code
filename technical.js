@@ -1,6 +1,13 @@
 let arr1 = [1, 2, 3, 4, 5, 6, 7];
 let arr2 = [5, 6, 7, 8, 9, 10, 11];
 
+// email validation
+// var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+// // prevent from free gmail  account
+//  var emailblockReg =
+//      /^([\w-\.]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)([\w-]+\.)+[\w-]{2,4})?$/;
+
 let findInterSection = arr1.filter((ele) => {
     return arr2.includes(ele)
 })
