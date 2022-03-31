@@ -227,6 +227,8 @@ const user1 = {
   name: "Talha"
 }
 user1.second = "khan"
+user1.second = "zahid"
+user1.second = "khan"
 
 console.log("ab", ab);
 console.log(user1);
