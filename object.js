@@ -221,19 +221,34 @@ console.clear();
 
 // Merging Object with Spread:
 // Merging two objects and that returns a new object.
-const user1 = {
-  age: 26,
-  mobile: 8801967402131,
-  name: "Talha"
-}
-user1.second = "khan"
-user1.second = "zahid"
-user1.second = "khan"
+// const user1 = {
+//   age: 26,
+//   mobile: 8801967402131,
+//   name: "Talha"
+// }
+// user1.second = "khan"
+// user1.second = "zahid"
+// user1.second = "khan"
 
-console.log("ab", ab);
-console.log(user1);
-const newObj = {
-  ...user1,
-  location: 'sylhet'
+// console.log(user1);
+// const newObj = {
+//   ...user1,
+//   location: 'sylhet'
+// }
+// console.log(newObj)
+
+
+function validate() {
+
+  var getValue = document.getElementById('search').value;
+
+  var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  if (mailformat.test(getValue)) {
+    alert("alert right")
+    return true;
+  } else {
+    alert("wrong ")
+    return false;
+  }
 }
-console.log(newObj)
