@@ -11,3 +11,6 @@ let sortArr=arr1.sort((a,b)=> return a-b;
           console.log(sortArr)
 
 console.log(findClosest);
+
+
+// https://netsuitedocumentation1.gitlab.io/netsuitedocumentation1/SCADeveloper.pdf
