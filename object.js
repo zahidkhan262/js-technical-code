@@ -253,21 +253,27 @@ console.clear();
 //   }
 // }
 function isEmail() {
-    var inputData = document.getElementById("search");
-    inputData.onkeyup = function () {
-        getValue = this.value;
-        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        setTimeout(() => {
-            if (regex.test(getValue)) {
-                inputData.style.border = "2px solid green";
-                return true;
-            } else {
-                inputData.style.border = "2px solid red";
-                return false;
-            }
-        }, 2000);
-        inputData.style.border = "1px solid #a3a3a3";
+  var inputData = document.getElementById("search");
+  var p = document.querySelector('p')
+  inputData.onkeyup = function () {
+    getValue = this.value;
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    setTimeout(() => {
+      if (regex.test(getValue)) {
+        inputData.style.border = "2px solid green";
+        return true;
+      } else {
+        inputData.style.border = "2px solid red";
+        p.innerHTML = "invalid input data"
 
-    }
+        return false;
+      }
+    }, 2000);
+    // p.style.color = "red"
+    p.innerHTML = ""
+
+    inputData.style.border = "1px solid #a3a3a3";
+
+  }
 }
 isEmail()
