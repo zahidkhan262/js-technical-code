@@ -258,6 +258,10 @@ function isEmail() {
   inputData.onkeyup = function () {
     getValue = this.value;
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    var onlyLetters=/^[A-Za-z]+$/;
+    if(onlyLetters.test(getValue)){
+        
+    }
     setTimeout(() => {
       if (regex.test(getValue)) {
         inputData.style.border = "2px solid green";
