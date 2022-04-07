@@ -280,4 +280,15 @@ function isEmail() {
 
   }
 }
-isEmail()
+isEmail();
+
+let a1=[1,2,3,4];
+let a2=[5,6,7,8];
+
+let myArr=[...a1,...a2];
+let show="";
+myArr.map((val,index)=>{
+  show +=val;
+  show +="<br>"
+  document.getElementById("bind").innerHTML=show;
+})
