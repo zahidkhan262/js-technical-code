@@ -260,7 +260,9 @@ function isEmail() {
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     var onlyLetters=/^[A-Za-z]+$/;
     if(onlyLetters.test(getValue)){
-        
+        p.innerHTML="right"
+    }else{
+      p.innerHTML="wrong"
     }
     setTimeout(() => {
       if (regex.test(getValue)) {
