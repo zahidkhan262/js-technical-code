@@ -26,4 +26,11 @@ function randomFunc(ran1, ran2){
 }
 console.log(randomFunc(1,6))
 
+// remove second last item from array
+let arr1 = [11, 2, 3, 4, 67, 44, 10];
+
+let lastItem = arr1.splice(arr1.length - 2, 1);
+
+console.log(lastItem)
+
 // https://netsuitedocumentation1.gitlab.io/netsuitedocumentation1/SCADeveloper.pdf
