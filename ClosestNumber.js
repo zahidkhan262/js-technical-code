@@ -13,4 +13,12 @@ let sortArr=arr1.sort((a,b)=> return a-b;
 console.log(findClosest);
 
 
+var val= Number.EPSILON;
+var a = 0.1;
+var b = 0.2;
+var c = 0.3;
+var d=a+b-c ==val;
+    document.body.innerHTML=d
+
+
 // https://netsuitedocumentation1.gitlab.io/netsuitedocumentation1/SCADeveloper.pdf
