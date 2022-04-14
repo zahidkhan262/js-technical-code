@@ -21,9 +21,9 @@ var d=a+b-c ==val;
     document.body.innerHTML=d
 
 function randomFunc(ran1, ran2){
-    let findRandomNumber = Math.floor(Math.random() * (ran1 -ran2 +1))
+    let findRandomNumber = Math.floor(Math.random() * (ran2 - ran1 +1) +ran1)
     return findRandomNumber;
 }
-randomFunc(1,20)
+console.log(randomFunc(1,6))
 
 // https://netsuitedocumentation1.gitlab.io/netsuitedocumentation1/SCADeveloper.pdf
