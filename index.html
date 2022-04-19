@@ -1,155 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical code</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: arial;
-        }
-
-        #bind {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            width: 350px;
-            margin: 10px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .card img {
-            width: 100%;
-        }
-
-        .card-body {
-            padding: 10px;
-        }
-
-        .card-body p {
-            margin-bottom: 10px;
-        }
-
-        ul {
-            margin: 0;
-            padding: 0;
-        }
-
-        ul li {
-            display: block;
-            list-style: none;
-            padding: 10px;
-            background: crimson;
-            cursor: pointer;
-            color: white;
-            text-align: center;
-            font-size: 20px;
-            margin-top: 10px;
-            width: 15%;
-        }
-
-        .container {
-            width: 100%;
-            background: #0019ef;
-            padding: 20px;
-            margin: 100px auto;
-        }
-
-        input {
-            outline: none;
-            padding: 10px;
-            border: 1px solid #a3a3a3;
-        }
-    </style>
+    <title>Task || Javascript</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!-- <ul>
-        <li>Select option</li>
-        <li class="showData" data-filter="shirt">Shirt</li>
-        <li class="showData" data-filter="pant">Pant</li>
-        <li class="showData" data-filter="top">Top</li>
-    </ul> -->
-    <select id="select">
-        <option value="">Select Data</option>
-        <option value="all">all</option>
-        <option value="shirt">Shirt</option>
-        <option value="top">top</option>
-    </select>
-    <div id="bind">
-    </div>
-    <div id="btn">
-    </div>
-
-
-
-    <ul id="list">
-        <li>item#1</li>
-        <li>item#2</li>
-    </ul>
-    <div class="container">
-        <label for="">Check Number is prime or not</label>
-        <div class="input-field">
-            <input type="email" id="search" placeholder="Enter a integer number...">
-            <p></p>
-            <button onclick="validate()">check</button>
+    
+    <header class="d-flex-1">
+        <div class="logo">React</div>
+        <div class="input_field" id="search" onclick="searchClick()">
+            <input type="text" class="input_style" placeholder="Search..">
         </div>
-        <div id="showData">
-
-        </div>
-    </div>
-    <div class="container">
-        <label for="">Check Number is armstrong or not</label>
-        <div class="input-field">
-            <input type="text" id="search1" placeholder="Enter a integer number...">
-        </div>
-        <button id="check">check</button>
-        <div id="showData1">
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-    <!-- <script src="arrayMethod.js"></script> -->
-
-
-    <!-- <script src="atmMachine.js"></script> -->
-    <!-- <script src="pattern.js"></script> -->
-    <!-- <script src="class.js"></script> -->
-    <!-- <script src="class2.js"></script> -->
-    <!-- <script src="callbackfun.js"></script> -->
-    <script src="object.js"></script>
-    <!-- <script src="tech.js"></script> -->
-    <!-- <script src="filterData.js"></script> -->
-    <!-- <script src="promises.js"></script> -->
-    <!-- <script src="day01.js"></script> -->
-    <!-- <script src="day02.js"></script> -->
-    <!-- <script src="primeNum.js"></script> -->
-    <!-- <script src="armstrong.js"></script> -->
-    <!-- <script src="table.js"></script> -->
-    <!-- <script src="factorial.js"></script> -->
-    <!-- <script src="palindrom.js"></script> -->
-    <!-- <script src="technical.js"></script> -->
-    <!-- <script src="ClosestNumber.js"></script> -->
-    <!-- <script src="Intersection.js"></script> -->
-    <!-- <script src="asycnAwait.js"></script> -->
-
-
-
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <script src="js/app.js"></script>
 </body>
-
 </html>
