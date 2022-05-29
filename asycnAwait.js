@@ -75,7 +75,7 @@ function addData(newData) {
 // by using async await function 
 async function start() {
     await addData({ name: "Abuzar", title: "Tester" })
-    getData()
+    return getData()
 }
 start()
 
