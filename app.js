@@ -16,7 +16,7 @@ app.get('/',(res, req)=>{
 // create middle for about so inclide as second parameter in app.get
 app.get('/about',customeMiddleWare,(res, req)=>{
     console.log("zahid khan");
-    res.send('My name is Zahid khan I am frontend React js developer");
+    res.send('My name is   khan I am frontend React js developer");
 })
     
 app.listen(PORT,()=>{
