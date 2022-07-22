@@ -23,7 +23,8 @@ function getData() {
 // addData({ name: "Abuzar", title: "Tester" })
 // getData()
 
-// //  output=> developer
+// //  output=>
+// developer
 // developer
 // developer
 
@@ -55,7 +56,7 @@ function addData(newData) {
             if (!errorMessage) {
                 resolve()
             } else {
-                reject("error ddata not found")
+                reject("error data not found")
             }
 
         }, 2000);
