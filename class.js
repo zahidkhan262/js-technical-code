@@ -17,4 +17,29 @@ class car {
 const classInstance = new car(4, 10, 1)
 console.log(classInstance.carStats());
 console.log(classInstance.carDetails());
+//class
+class Animal{
+    constructor(name, age){
+        this.name=name;
+        this.age=age;
+    }
+       getInfo = () =>{
+        return (
+            `the name is ${this.name} and age is ${this.age}`
+            )
+    }
+    makeSound = () =>{
+        return (
+            "bark"
+            )
+    }
+}
+// class instance
+
+const firstInstance= new Animal("puppy", 2)
+console.log(firstName);
+console.log(firstName.getInfo());
+
+
+
 
