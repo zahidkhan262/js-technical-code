@@ -12,6 +12,12 @@ let sortArr=arr1.sort((a,b)=> return a-b;
 
 console.log(findClosest);
 
+for(let i=0; i<=arr1.length; i++){
+    if(target != i){
+        return false
+    }else{
+    }
+}
 
 var val= Number.EPSILON;
 var a = 0.1;
