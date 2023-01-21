@@ -24,6 +24,15 @@ let closeNumber = numbers.sort((a, b) => {
 
 console.log(closeNumber.shift());
 
+// sleep
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+
 
 // recursion countown
 // program to count down numbers to 1
