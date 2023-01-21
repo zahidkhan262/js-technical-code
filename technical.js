@@ -42,3 +42,15 @@ function countDown(number) {
 }
 
 countDown(4);
+
+
+    const closets = 8;
+    const numbers = [1, 10, 7, 2, 4, 9];
+
+    let closeNumber = numbers.sort((a, b) => {
+        return Math.abs(closets - a) - Math.abs(closets - b);
+    })
+
+    console.log(closeNumber.shift());
+
+
