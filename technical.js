@@ -69,3 +69,5 @@ setDateTime({time:new Date()})
 <Chip label={dateTime?.date.toLocaleString('en-US', { timeZone: 'Asia/kolkata' })} /> //Time : 
 1/22/2023, 10:47:01 PM
 
+// post office api
+https://api.postalpincode.in/pincode/110001
