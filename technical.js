@@ -63,3 +63,9 @@ countDown(4);
     console.log(closeNumber.shift());
 
 
+//  get current time 
+setDateTime({time:new Date()})
+
+<Chip label={dateTime?.date.toLocaleString('en-US', { timeZone: 'Asia/kolkata' })} /> //Time : 
+1/22/2023, 10:47:01 PM
+
