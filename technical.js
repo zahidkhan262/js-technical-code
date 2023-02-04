@@ -15,22 +15,22 @@ let a = -12.411111
 console.log(Math.abs(a));
 console.log("findInterSection", findInterSection)
 
-const closets = 8;
-const numbers = [1, 10, 7, 2, 4, 9];
+const clossest = 8;
+const num = [1, 10, 7, 2, 4, 9];
 
-let closeNumber = numbers.sort((a, b) => {
-    return Math.abs(closets - a) - Math.abs(closets - b);
+let closeNumbers = num.sort((a, b) => {
+    return Math.abs(clossest - a) - Math.abs(clossest - b);
 })
 
-console.log(closeNumber.shift());
+console.log(closeNumbers.shift());
 
 // sleep
 function sleep(milliseconds) {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now();
-  } while (currentDate - date < milliseconds);
+    const date = Date.now();
+    let currentDate = null;
+    do {
+        currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
 }
 
 
@@ -53,21 +53,21 @@ function countDown(number) {
 countDown(4);
 
 
-    const closets = 8;
-    const numbers = [1, 10, 7, 2, 4, 9];
+const closets = 8;
+const numbers = [1, 10, 7, 2, 4, 9];
 
-    let closeNumber = numbers.sort((a, b) => {
-        return Math.abs(closets - a) - Math.abs(closets - b);
-    })
+let closeNumber = numbers.sort((a, b) => {
+    return Math.abs(closets - a) - Math.abs(closets - b);
+})
 
-    console.log(closeNumber.shift());
+console.log(closeNumber.shift());
 
 
 //  get current time 
-setDateTime({time:new Date()})
+// setDateTime({ time: new Date() })
 
-<Chip label={dateTime?.date.toLocaleString('en-US', { timeZone: 'Asia/kolkata' })} /> //Time : 
-1/22/2023, 10:47:01 PM
+{/* <Chip label={dateTime?.date.toLocaleString('en-US', { timeZone: 'Asia/kolkata' })} /> //Time : 
+1/22/2023, 10:47:01 PM */}
 
 // post office api
 https://api.postalpincode.in/pincode/110001

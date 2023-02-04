@@ -10,13 +10,13 @@ const customeMiddleWare =(res, req,next)=>{
 app.use(customeMiddleWare)
 
 app.get('/',(res, req)=>{
-    console.log("zahid khan");
-    res.send('hello world");
+    console.log("zahid khan")
+    res.send("hello world")
 });
 // create middle for about so inclide as second parameter in app.get
 app.get('/about',customeMiddleWare,(res, req)=>{
-    console.log("zahid khan");
-    res.send('My name is   khan I am frontend React js developer");
+    console.log("zahid khan")
+    res.send("My name is   khan I am frontend React js developer")
 })
     
 app.listen(PORT,()=>{
