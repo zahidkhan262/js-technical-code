@@ -33,3 +33,26 @@
 
 // console.log(add(3, 2));
 
+
+// ?what is pure function
+// A Pure Function is a function (a block of code)
+//  that always returns the same result if the same arguments are passed
+
+// this is pure fucntion 
+//   =============== pure function ======================  //
+
+function CalculateGST(productPrice) {
+    return productPrice * 5;
+}
+console.log(CalculateGST(20))
+
+
+//   ===============not pure======================  //
+// not pure function eg
+// It is not a pure function as the output is dependent on an external variable “tax”. 
+var tax = 20;
+function calculateGST(tax, productPrice) {
+    return productPrice * (tax / 100) + productPrice;
+}
+console.log(calculateGST(tax, 2))
+
