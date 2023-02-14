@@ -14,5 +14,19 @@ const findLastWordLen = (strs) => {
         }
     }
 }
-console.log(findLastWordLen(name))
-console.log(findLastWordLen(name2))
+console.log(findLastWordLen(name))//4
+console.log(findLastWordLen(name2)) //4
+
+const converUpperToLower = (str)=>{
+    let newStr=""
+    for(let ele of str){
+    let char = str.toUpperCase();
+        if(char === ele){
+            newStr += ele.toLowerCase()
+        }else{
+          newStr +=ele.toUpperCase()
+        }
+    }
+    return newStr;
+}
+console.log(converUpperToLower("zAhiD"))
