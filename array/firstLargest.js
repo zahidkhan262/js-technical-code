@@ -30,3 +30,7 @@ let x= data.reduce((prev,curr)=>{
    return prev
 },0)
 console.log(x)
+
+// in one line of code largest number by reduce methood
+let x= data.reduce((prev,curr)=> prev <=curr ? prev= curr: prev)
+console.log(x)
