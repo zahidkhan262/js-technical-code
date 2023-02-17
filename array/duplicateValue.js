@@ -12,3 +12,8 @@ const findDuplicateValue = (arr) => {
     return duplicate
 }
 console.log(findDuplicateValue(data))
+
+let arr =[1,2,3,4,5]
+let obj={...arr}
+console.log(obj)
+//{ '0': 1, '1': 2, '2': 3, '3': 4, '4': 5, '5': 6 }
