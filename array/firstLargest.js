@@ -21,3 +21,12 @@ const findFirstLargestNumber = (arr) => {
 
 }
 console.log(findFirstLargestNumber(data))
+
+// find largest number in array by reduce function
+let x= data.reduce((prev,curr)=>{
+   if(prev <= curr){
+       prev = curr
+   }
+   return prev
+},0)
+console.log(x)
