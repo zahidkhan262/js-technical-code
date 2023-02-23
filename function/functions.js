@@ -72,3 +72,7 @@ function pow(x, n) {
 console.log( pow(5, 3));
 output====> //125
 
+
+function pow(x, n) {
+  return (n == 1) ? x : (x * pow(x, n - 1));
+}
