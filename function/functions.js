@@ -76,3 +76,13 @@ output====> //125
 function pow(x, n) {
   return (n == 1) ? x : (x * pow(x, n - 1));
 }
+
+let data =["who", "are", "you"]
+function test(str){
+  let newStr=""
+for(let i=0; i < str.length; i++){
+       newStr +=str[i]+" "
+}
+return newStr
+}
+console.log(test(data))
