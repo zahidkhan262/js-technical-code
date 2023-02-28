@@ -30,3 +30,4 @@ const converUpperToLower = (str)=>{
     return newStr;
 }
 console.log(converUpperToLower("zAhiD"))
+console.log(converUpperToLower("AnuSkA"))
